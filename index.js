@@ -1,5 +1,5 @@
 const { sequelize, Phone } = require('./models');
-const { Op, Sequelize } = require('sequelize');
+const { Op } = require('sequelize');
 
 (async function () {
   const phone = {
