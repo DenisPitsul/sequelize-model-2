@@ -31,7 +31,7 @@ module.exports = (sequelize, DataTypes) => {
         },
       },
       cpu: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false,
       },
       ram: {

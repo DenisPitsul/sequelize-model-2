@@ -40,7 +40,7 @@ const { Op } = require('sequelize');
   const foundPhones3 = await Phone.findAll({
     raw: true,
     where: {
-      year: { [Op.gt]: 2022 },
+      year: { [Op.lt]: 2022 },
     },
   });
   console.log('foundPhones3:', foundPhones3);
