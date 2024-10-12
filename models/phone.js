@@ -44,6 +44,9 @@ module.exports = (sequelize, DataTypes) => {
       screenSize: {
         type: DataTypes.FLOAT,
         allowNull: false,
+        validate: {
+          min: 0.1,
+        },
       },
       nfc: {
         type: DataTypes.BOOLEAN,
