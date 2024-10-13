@@ -17,7 +17,7 @@ const { Op } = require('sequelize');
   // отримання списку телефонів (* 3-я сторінка при перегляді по 4 телефони на сторінці, упорядкованих за роком виробництва)
   const page = 3;
   const limit = 4;
-  const offset = page - 1 + limit;
+  const offset = (page - 1) * limit;
   const foundPhones1 = await Phone.findAll({
     raw: true,
     order: [['year']],
